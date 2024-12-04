@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "DEGPT",
+  "version": "1.0",
+  "description": "hidden GPT-4o for RUC Digital Exam multiple choice exams",
+  "permissions": ["activeTab", "scripting", "storage"],
+  "action": {
+    "default_title": "DEGPT",
+    "default_popup": "popup/index.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "css": ["css/content.css"],
+      "js": ["vendor-content.js", "content.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["content.js"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}

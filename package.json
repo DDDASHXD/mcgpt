@@ -1,0 +1,23 @@
+{
+  "name": "degpt",
+  "version": "1.0.0",
+  "description": "Chrome extension for RUC Digital Exam",
+  "scripts": {
+    "build": "webpack --config webpack.config.js",
+    "watch": "webpack --config webpack.config.js --watch",
+    "type-check": "tsc --noEmit",
+    "lint": "eslint src --ext .ts,.tsx"
+  },
+  "dependencies": {
+    "@types/chrome": "^0.0.246",
+    "openai": "^4.0.0"
+  },
+  "devDependencies": {
+    "copy-webpack-plugin": "^11.0.0",
+    "css-loader": "^6.11.0",
+    "mini-css-extract-plugin": "^2.7.6",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
+  }
+}
