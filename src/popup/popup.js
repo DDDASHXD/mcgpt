@@ -34,19 +34,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     try {
       // Save to storage
       await chrome.storage.local.set({ apiKey: newApiKey });
-      
-      // Also save to config.json for persistence
-      const config = { apiKey: newApiKey };
-      const blob = new Blob([JSON.stringify(config, null, 2)], { type: 'application/json' });
-      
-      // Create download link
-      const a = document.createElement('a');
-      a.href = URL.createObjectURL(blob);
-      a.download = 'config.json';
-      document.body.appendChild(a);
-      a.click();
-      document.body.removeChild(a);
-      URL.revokeObjectURL(a.href);
 
       statusDiv.textContent = 'API key saved! Please move config.json to extension root.';
     } catch (error) {
