@@ -1,11 +1,11 @@
 {
   "manifest_version": 3,
-  "name": "DEGPT",
+  "name": "MCGPT",
   "version": "1.0",
-  "description": "hidden GPT-4o for RUC Digital Exam multiple choice exams",
+  "description": "hidden GPT-4o for any multiple choice exams",
   "permissions": ["activeTab", "scripting", "storage"],
   "action": {
-    "default_title": "DEGPT",
+    "default_title": "MCGPT",
     "default_popup": "popup/index.html"
   },
   "background": {
