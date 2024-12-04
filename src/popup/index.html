@@ -9,13 +9,13 @@
       <div class="input-group">
         <label for="apiKey">OpenAI API Key</label>
         <input type="password" id="apiKey" placeholder="sk-..." />
-        <input type="checkbox" id="showKey" />
-        <label for="showKey">Show Key</label>
+        <div class="showgroup">
+          <input type="checkbox" id="showKey" />
+          <label for="showKey">Show Key</label>
+        </div>
       </div>
-      <div class="show-group">
-        <button id="saveButton">Save API Key</button>
-        <div id="status" class="status"></div>
-      </div>
+      <button id="saveButton">Save API Key</button>
+      <div id="status" class="status"></div>
     </div>
 
     <script src="popup.js"></script>

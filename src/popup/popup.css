@@ -42,7 +42,7 @@ button:hover {
   background: #0056b3;
 }
 
-.show-group {
+.showgroup {
   display: flex;
   flex-direction: row;
   gap: 8px;
