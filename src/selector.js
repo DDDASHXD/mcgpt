@@ -56,7 +56,7 @@ class ElementSelector {
      */
     handleMouseOver(e) {
         e.stopPropagation();
-        e.target.style.outline = '2px solid #007bff';
+        e.target.style.outline = '2px solid #007bff2c';
     }
 
     /**
